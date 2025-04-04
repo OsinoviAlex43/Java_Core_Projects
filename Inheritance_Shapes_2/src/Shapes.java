@@ -1,13 +1,7 @@
 import java.awt.*;
 
 public abstract class Shapes {
-    private double volume;
+    protected double volume;
+    public abstract double getVolume() ;
 
-    public Shapes(double volume){
-        this.volume = volume;
-    }
-
-    public double getVolume() {
-        return volume;
-    }
 }

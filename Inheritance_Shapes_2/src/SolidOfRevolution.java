@@ -1,14 +1,18 @@
 public abstract class SolidOfRevolution extends Shapes {
 
-    private double radius;
+    protected double radius;
+
 
     public double getRadius() {
         return radius;
     }
 
-    public SolidOfRevolution(double volume,double radius){
-        super(volume);
+    public SolidOfRevolution(double radius) {
         this.radius = radius;
     }
 
+    @Override
+    public double getVolume() {
+        return volume;
+    }
 }

@@ -6,8 +6,8 @@ public class Box extends Shapes {
     private double available;
 
     public Box(double available) {
-        super(available);
         this.available = available;
+        this.volume = available;
     }
 
     public boolean addShape(Shapes shape){
@@ -17,6 +17,11 @@ public class Box extends Shapes {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public double getVolume() {
+        return volume;
     }
 }
 
