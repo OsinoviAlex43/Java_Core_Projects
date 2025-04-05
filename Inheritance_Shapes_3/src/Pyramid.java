@@ -1,10 +1,9 @@
 public class Pyramid implements Shapes {
     private double s;
-    private double h;
-    private double vol;
+    private double height;
 
     public Pyramid(double h, double s) {
-        this.h = h;
+        this.height = h;
         this.s = s;
     }
 
@@ -18,7 +17,6 @@ public class Pyramid implements Shapes {
 
     @Override
     public double getVolume() {
-        vol = h * s * 4 / 3;
-        return vol;
+        return  h * s * (1 / 3);
     }
 }

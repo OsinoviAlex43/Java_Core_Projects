@@ -12,10 +12,10 @@ public class Main {
         Box box = new Box(400);
         Shapes pyramid = new Pyramid(4,3);
         Shapes ball = new Ball(6);
-        Shapes cylindr = new Cylinder(100,2);
+        Shapes cylinder = new Cylinder(100,2);
         System.out.println(box.addShape(pyramid));
         System.out.println(box.addShape(ball));
-        System.out.println(box.addShape(cylindr));
+        System.out.println(box.addShape(cylinder));
 
         List<Shapes> shapes = box.getShapes();
         Collections.sort(shapes);

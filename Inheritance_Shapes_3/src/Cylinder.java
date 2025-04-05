@@ -1,7 +1,7 @@
 public class Cylinder extends SolidOfRevolution {
 
     protected double height;
-    private double vol;
+
     public double getHeight() {
         return height;
     }
@@ -14,7 +14,6 @@ public class Cylinder extends SolidOfRevolution {
 
     @Override
     public double getVolume() {
-        vol = (Math.PI * radius * radius * height);
-        return vol;
+        return (Math.PI * radius * radius * height);
     }
 }
